@@ -48,7 +48,7 @@ async function startProgram() {
 
 	await speak("Hello Square", true);
 	
-	await Sound.Game.Coin.play(true);
+	await Sound.Animal.Penguin.play(true);
 	
 	await roll((getHeading() + 90), 60, 1);
 
@@ -56,7 +56,7 @@ async function startProgram() {
 
 	setMainLed({ r: 0, g: 255, b: 0 });
 
-	await Sound.Game.Coin.play(true);
+	await Sound.Animal.Monkey.play(true);
 
 	await roll((getHeading() + 90), 60, 1);
 
@@ -72,7 +72,7 @@ async function startProgram() {
 	
 	setMainLed({ r: 255, g: 255, b: 0 });
 
-	await Sound.Game.Coin.play(true);
+	await Sound.Animal.Elephant.play(true);
 
 	await roll((getHeading() + 90), 60, 1);
 
