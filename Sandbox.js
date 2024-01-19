@@ -38,7 +38,7 @@ async function startProgram() {
 
 }
 
-*/
+
 
 // Square W/ Different Colors & Sounds For Each Line & Commit
 
@@ -78,12 +78,28 @@ async function startProgram() {
 
 	await delay(1);
 	
-	
+
 		
 		
 		
 	
 
+}
+*/
+
+
+// Figure 8 & Commit
+async function startProgram() {
+	
+	setSpeed(60)
+	
+	await spin(360, 3)
+	
+	await spin(-360, 3)
+	
+	//await delay(1) ;
+	
+	//setSpeed(0)
 }
 
 
@@ -91,4 +107,8 @@ async function startProgram() {
 
 
 
-// Figure 8 & Commit
+
+
+
+
+
