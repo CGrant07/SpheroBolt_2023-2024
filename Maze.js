@@ -4,7 +4,7 @@
 //Program: Sphero Bolt Maze
 //Bolt ID: B2F8
 
-//Start Text and Speak Commit
+//Start Commit
 
 async function startProgram() {
 
@@ -13,20 +13,37 @@ async function startProgram() {
 	await speak("Start", true); 
 
 	await scrollMatrixText('Start!', { r: 66, g: 56, b: 255 }, 15, true)
-}
 	
-//Blue Sphere
-
-async function startProgram() {
+	//Blue LED Commit
 	
 	await roll((getHeading() + 0), 60, 2.5); 
+	
+	await delay (1);
 	
 	await setMainLed({ r: 0, g: 0, b: 255 }); 
 	
 	await delay (1);
 	
 	await roll((getHeading() + 90), 60, 1.5); 
+	
+	await delay (1);
+	
+	//Sound 1 Commit 
+	
+	setMainLed({ r: 0, g:0 , b:0  });
+	
+	await Sound.Game.Coin.play(true); 
+	
+	await delay (1);
 
-
+	await roll((getHeading() + 90), 60, 1.2);  
+	
+	await delay (1); 
+	
+	await roll((getHeading() + 35), 60, 1);
+	
+	// Red LED Commit 
+	
+	
 
 }
