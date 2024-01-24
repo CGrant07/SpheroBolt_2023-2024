@@ -4,7 +4,7 @@
 //Program: Sphero Bolt Maze
 //Bolt ID: B2F8
 
-//Start Commit
+//Start Text and Speak Commit
 
 async function startProgram() {
 
@@ -13,8 +13,11 @@ async function startProgram() {
 	await speak("Start", true); 
 
 	await scrollMatrixText('Start!', { r: 66, g: 56, b: 255 }, 15, true)
+}
 	
-	//Blue Sphere
+//Blue Sphere
+
+async function startProgram() {
 	
 	await roll((getHeading() + 0), 60, 2.5); 
 	
