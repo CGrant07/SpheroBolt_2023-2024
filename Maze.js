@@ -50,6 +50,12 @@ async function startProgram() {
 	
 	await delay (1);
 	
-	await roll((getHeading() + -90), 60, .5)
+	await roll((getHeading() + -90), 60, .5) 
+	
+	await delay (1);
+	
+	await roll((getHeading() + -85), 60, 1.1) 
+	
+	setMainLed({ r: 0, g:0 , b:0  }); 
 
 }
